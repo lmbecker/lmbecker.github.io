@@ -619,12 +619,14 @@
             }
             .grid{
                 display: grid;
-                grid-column-gap: 50px;
-                grid-row-gap: 50px;
+                grid-column-gap: 30px;
+                grid-row-gap: 30px;
             }
             @media (min-width: 865px){
                 .grid{
                 grid-template-columns: 1fr 1fr;
+                grid-column-gap: 50px;
+                grid-row-gap: 50px;
                 }
             }
             .grid-card{
