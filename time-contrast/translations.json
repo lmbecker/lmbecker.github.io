@@ -22,7 +22,11 @@
         "language": "Sprache",
         "close": "Schließen",
         "hours_worked": "Gearbeitete Stunden",
-        "average_hours_worked": "Durchschnitt"
+        "average_hours_worked": "Durchschnitt",
+        "lev_becker": "Lev Becker",
+        "author": "Author",
+        "used_technologies": "Verwendete Technologien",
+        "credits": "Credits"
     },
     "en-US": {
         "day": "Day",
@@ -47,7 +51,11 @@
         "language": "Language",
         "close": "Close",
         "hours_worked": "Worked hours",
-        "average_hours_worked": "Average"
+        "average_hours_worked": "Average",
+        "lev_becker": "Lev Becker",
+        "author": "Author",
+        "used_technologies": "Used Technologies",
+        "credits": "Credits"
     },
     "ru-RU": {
         "day": "День",
@@ -72,7 +80,11 @@
         "language": "Язык",
         "close": "Закрыть",
         "hours_worked": "Отработанные часы",
-        "average_hours_worked": "В среднем"
+        "average_hours_worked": "В среднем",
+        "lev_becker": "Лев Беккер",
+        "author": "Автор",
+        "used_technologies": "Использованные технологии",
+        "credits": "Credits"
     },
     "fr-FR": {
         "day": "Jour",
@@ -97,6 +109,10 @@
         "language": "Langue",
         "close": "Fermer",
         "hours_worked": "Heures travaillées",
-        "average_hours_worked": "En moyenne"
+        "average_hours_worked": "En moyenne",
+        "lev_becker": "Lev Becker",
+        "author": "Auteur",
+        "used_technologies": "Technologies utilisées",
+        "credits": "Credits"
     }
 }
