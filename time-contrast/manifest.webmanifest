@@ -1,0 +1,21 @@
+{
+    "name": "time contrast",
+    "short_name": "time contrast",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "white",
+    "description": "time contrast is a simple progressive web app to calculate work hours.",
+    "theme_color": "#D0021B",
+    "icons": [
+        {
+            "src": "./img/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
