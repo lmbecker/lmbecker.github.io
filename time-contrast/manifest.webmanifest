@@ -11,7 +11,7 @@
             "name": "Statistics View",
             "short_name": "Stats",
             "description": "View the statistics",
-            "url": "/?view=chartsView",
+            "url": "./?view=chartsView",
             "icons": [
                 {
                     "src": "./img/icon-192x192.png",
