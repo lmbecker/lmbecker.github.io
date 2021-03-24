@@ -1189,10 +1189,10 @@ svg {
                             <h2>${(new Date).getFullYear()}</h2>
                             ${this._renderHoursSumAndAverage(null===(a=this.stats)||void 0===a?void 0:a.hoursInYear,null===(r=this.stats)||void 0===r?void 0:r.avgHoursInYear)}
                         </div>
-                        <div class="grid-card card card-elevatable">
+                        <!-- <div class="grid-card card card-elevatable">
                             <h2>${this._poly.t("come_back_here_later")}</h2>
                             <p>${this._poly.t("More statistics are coming in the future!")}</p>
-                        </div>
+                        </div> -->
                     </div>
                 </main>
             `}_renderWeekData(e){var t,n;let i="#000000";let a="#0084a5";if("dark"===(null===(n=null===(t=this.state)||void 0===t?void 0:t.userPrefs)||void 0===n?void 0:n.theme)&&(a="#C62828",i="#FFFFFF"),null==e?void 0:e.week){const t={labels:["Monday","Tuesday","Wednesday","Thursday","Friday"],datasets:[{label:"worked hours",barThickness:20,maxBarThickness:20,minBarLength:0,data:[8,5,7,6,7],backgroundColor:[a,a,a,a,a,a,a],borderColor:[a,a,a,a,a,a,a],borderWidth:1}]},n={legend:{display:!1},scales:{xAxes:[{ticks:{fontColor:i},gridLines:{display:!1}}],yAxes:[{ticks:{beginAtZero:!0,fontColor:i},gridLines:{display:!0}}]}};t.labels=Object.keys(e.week);const r=Object.keys(e.week).map((t=>e.week[t]));return t.datasets[0].data=r,N`
