@@ -1449,26 +1449,27 @@ svg {
                         ></mwc-tab>
                     </mwc-tab-bar>
                     <div class="view-container">${this._renderCurrentView(this.currentView)}</div>
-                    <mwc-dialog id="settingsDialog" heading="${this._poly.t("settings")}">
-                        <div class="dialog-content">
-                            ${this._renderLanguageSelect(this.supportedLocales.sort(((e,t)=>e.name>t.name?1:t.name>e.name?-1:0)))}
-                            <ul class="theme-items-container">
-                                <li class="theme-item">
-                                    <p @click=${()=>this._saveTheme("light")} id="light">light</p>
-                                </li>
-                                <li class="theme-item">
-                                    <p @click=${()=>this._saveTheme("dark")} id="dark">dark</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <mwc-button slot="secondaryAction" dialogAction="cancel"> ${this._poly.t("close")} </mwc-button>
-                    </mwc-dialog>
+                    ${this._renderSettingsDialog()}
+
                     <mwc-snackbar id="snackbar" labelText="Can't send photo. Retry in 5 seconds.">
                         <mwc-icon-button icon="close" slot="dismiss"></mwc-icon-button>
                     </mwc-snackbar>
                 </div>
             </mwc-drawer>
-        `}_updateDrawerTheme(e){const t=this.shadowRoot.querySelector("mwc-drawer");if(t){const n=t.shadowRoot.querySelector("aside");switch(e){case"light":t.classList.replace("dark","light");break;case"dark":n.style.background="var(--card-bg)",t.classList.replace("light","dark");break;default:t.classList.replace("dark","light")}}}_renderLanguageSelect(e){return N`
+        `}_renderSettingsDialog(){return N` <mwc-dialog id="settingsDialog" heading="${this._poly.t("settings")}">
+            <div class="dialog-content">
+                ${this._renderLanguageSelect(this.supportedLocales.sort(((e,t)=>e.name>t.name?1:t.name>e.name?-1:0)))}
+                <ul class="theme-items-container">
+                    <li class="theme-item">
+                        <p @click=${()=>this._saveTheme("light")} id="light">light</p>
+                    </li>
+                    <li class="theme-item">
+                        <p @click=${()=>this._saveTheme("dark")} id="dark">dark</p>
+                    </li>
+                </ul>
+            </div>
+            <mwc-button slot="secondaryAction" dialogAction="cancel"> ${this._poly.t("close")} </mwc-button>
+        </mwc-dialog>`}_updateDrawerTheme(e){const t=this.shadowRoot.querySelector("mwc-drawer");if(t){const n=t.shadowRoot.querySelector("aside");switch(e){case"light":t.classList.replace("dark","light");break;case"dark":n.style.background="var(--card-bg)",t.classList.replace("light","dark");break;default:t.classList.replace("dark","light")}}}_renderLanguageSelect(e){return N`
             <mwc-select
                 @change=${e=>{const t=e.target;this._saveLocale(t.value)}}
                 label=${this._poly.t("language")}

@@ -27,5 +27,17 @@
             "sizes": "512x512",
             "type": "image/png"
         }
+    ],
+    "screenshots": [
+        {
+            "src": "./img/screenshot-day",
+            "sizes": "410x730",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/screenshot-stats",
+            "sizes": "410x730",
+            "type": "image/png"
+        }
     ]
 }
