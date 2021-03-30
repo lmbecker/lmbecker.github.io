@@ -30,12 +30,12 @@
     ],
     "screenshots": [
         {
-            "src": "./img/screenshot-day",
+            "src": "./img/screenshot-day.png",
             "sizes": "410x730",
             "type": "image/png"
         },
         {
-            "src": "./img/screenshot-stats",
+            "src": "./img/screenshot-stats.png",
             "sizes": "410x730",
             "type": "image/png"
         }
