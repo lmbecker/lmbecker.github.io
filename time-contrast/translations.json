@@ -27,7 +27,8 @@
         "lev_becker": "Lev Becker",
         "author": "Author",
         "used_technologies": "Verwendete Technologien",
-        "credits": "Credits"
+        "credits": "Credits",
+        "page_not_found": "Die Seite konnte nicht gefunden werden."
     },
     "en-US": {
         "day": "Day",
